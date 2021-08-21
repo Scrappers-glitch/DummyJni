@@ -8,7 +8,7 @@
 └──╼ $   gcc -fPIC 'TestJni.cpp' -shared  -o 'libTestJni.so' \
 >                 -I'/usr/lib/jvm/java-11-openjdk-amd64/include' \
 >                 -I'/usr/lib/jvm/java-11-openjdk-amd64/include/linux' \
->                 -I${workDir}'/code/natives/includes'
+>                 -I'.'
 ┌─[twisted@parrot]─[~/GradleProjects/DummyJni]
 └──╼ $java -cp . -Djava.library.path=. TestJni
 hey
